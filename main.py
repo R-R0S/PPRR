@@ -170,7 +170,6 @@ def get_encryption_key():
 	key = base64.b64decode(local_state["os_crypt"]["encrypted_key"])
 	# remove DPAPI str
 	key = key[5:]
-	#none
 	# return decrypted key that was originally encrypted
 	# using a session key derived from current user's logon credentials
 	return win32crypt.CryptUnprotectData(key, None, None, None, 0)[1]
