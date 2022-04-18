@@ -1,0 +1,9 @@
+pyinstaller
+requests==2.7.0
+pywin32
+ip2geotools
+opencv-python
+Pillow
+db-sqlite3
+temp
+cv2
